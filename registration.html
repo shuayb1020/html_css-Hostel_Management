@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="registration.css">
+</head>
+<body>
+    <h1>Sign Up</h1>
+    <div id="form">
+        
+        <form action="login.html" onsubmit="return confirmation()">
+            <div id="input">
+              <center> <img src="logo.png" alt="TECH-U logo"></center>
+                <div class="input1">
+                    
+                <label for="FirstName">FIRSTNAME</label>
+                <input type="text" name="FirstName" required placeholder="e.g. Charles"><br>
+                <label for="LastName">LASTNAME</label>
+                <input type="text" name="LastName" required placeholder="e.g. Aldor"><br>
+                <label for="Email">E-MAIL</label><br>
+                <input type="email" name="Email" required placeholder="e.g. charles.ador28@gmail.com"><br>
+                <label for="matricNo">MATRIC NUMBER</label><br>
+                <input type="text" name="matricNo" required><br>
+                <label for="Password">PASSWORD</label>
+                <input type="password" name="Password" id="psw" required><br>
+                <label for="ConfirmPassword"  > CONFIRM PASSWORD </label>
+                <input type="password" name="ConfirmPassWord" id="confirm" required><br>
+                <p id="message" style="color: red;"></p>
+            </div>
+            <div class="input2">
+                <input type="submit" id="btn" value="REGISTER NOW">  
+            </div>
+            </div>
+        </form>
+    </div>
+    <script src="registration.js"></script>
+</body>
+</html>

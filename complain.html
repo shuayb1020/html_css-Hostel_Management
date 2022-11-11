@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>complain|Hostel portal</title>
+    <link rel="stylesheet" href="complain.css">
+    <link rel="stylesheet" href="./fontawesome-free-5.15.2-web/css/all.css">
+</head>
+<body>
+    <div id="Sidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <img src="logo.png" width="100em" height="60px" style="border-radius: 50%; margin-left: 50px;" alt="">
+        <a href="dashboard.html">
+            <i class="fa fa-clock"></i>
+             Dashboard
+        </a>
+        
+        <a href="#">
+            <i class="fa fa-comments"></i>
+            Room complain
+        </a> 
+        
+        
+        <a href="roomReg.html">
+            <i class="fa fa-bed"></i>
+            Room registration
+        </a>
+        
+        <a href="login.html">
+            <i class="fa fa-arrow-alt-circle-right"></i>
+            Logout
+        </a>
+    </div>
+
+    <!-- end of drawer -->
+    <div id="main">
+        <div class="navbar">
+
+        </div>
+
+        <div id="form">
+            <div id="head" style="font-weight: bold;">Complaint form</div>
+            <form action="">
+                <!-- <div id="date"> -->
+                    <!-- <div id="date1"> -->
+                    <label for="start-date">Start date</label><br>
+                    <input type="date" name="startDate" id="startDate"><br>
+                   <!-- </div> -->
+                    <!-- <div id="date2"> -->
+                    <label for="date-reported">Date reported</label><br>
+                    <input type="date" name="dateReported" id="dateReported">
+                  <!-- </div> -->
+               <!-- </div> --><br>
+                <label for="category">Category</label><br>
+                <!-- <input type="text" name="category" id="category"> -->
+                <select name="category" id="category">
+                    <option value="Electricity">Electrical Appliances</option>
+                    <option value="Plumbing">Plumbing</option>
+                    <option value="furniture">Furniture</option>
+                </select><br>
+                <label for="subject">Subject</label><br>
+                <input type="text" name="subject" id="subject"><br>
+                <label for="description">Desription</label><br>
+                <input type="text" name="description" id="description"><br>
+                <div class="button">
+                    <button type="button"><a href="summary.html"> Submit </a></button>
+                    <button id="bck"> <a href="dashboard.html"> Back </a></button>
+
+                </div>
+               
+            </form>
+        </div>
+
+
+
+        <!--  HARMBURGER FOR SIDE DRAWER. when clicked the side nav menu appears -->
+        <span style="font-size:30px;cursor:pointer;color: white; position: absolute; padding-top: 20px; float: right;" 
+        class="harmburger" onclick="openNav()"> &#9776; </span>
+
+
+    </div>
+
+    <script>
+        function openNav() {
+            document.getElementById("Sidenav").style.width = "240px";
+            document.getElementById("main").style.marginLeft = "240px";
+            
+        }
+        
+        function closeNav() {
+            document.getElementById("Sidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft= "0";
+        }
+        
+    </script>
+</body>
+</html>

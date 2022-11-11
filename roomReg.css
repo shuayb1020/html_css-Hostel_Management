@@ -1,0 +1,107 @@
+body{
+    background-image: url(hostel.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+	margin: 45px 25%;
+	color: #1A0A0C;
+	font-family: Segoe UI;
+}
+p{
+	text-align: center;
+	align-items: center;
+	align-content: center;
+	font-weight: bold;
+	font-size: XX-large;
+	/* padding:5px 2px 1px 5px; */
+    color: #FFF;
+	margin-left: 36%;
+	margin-right: 36%;
+    /* display: inline-block; */
+}
+
+#form{
+ 	/* border: 2px solid #9B0016; */
+	line-height: 40px;
+}
+input[type="text" i], input[type="email" i], select{
+	border-radius:20px;
+	margin: 3px 4px;
+	width: 95%;
+	padding: 10px;
+	font-size: larger;
+	
+}
+a{
+	color: #1A0A0C;
+	font-size: small;
+}
+a:hover{
+	color: #744f55;
+}
+button {
+	color: #FFE1E5;
+	border-radius: 10px;
+	margin: 2px;
+	padding: 10px 20px;
+	background-color: #9B0016;
+	transition: 2s;
+}
+button > a{
+	text-decoration: none;
+	color: white;
+}
+button:hover{
+	background-color: #572d33;
+}
+form{
+	background-color:#FFF;
+	padding: 10px;
+	font-size: larger;
+}
+#input1{
+	margin: 20px;
+}
+#input2{
+	align-items: center;
+	text-align: center;
+}
+footer{
+	margin-top: 30px;
+}
+@media(max-width:1024px){
+	.register, .login{
+		padding: 5px 0px 5px 10px;
+		font-size: large;
+	}
+	body{
+		font-size: small;
+		margin-left: 100px;
+		margin-right: 100px;
+	}
+	input[type="text" i], input[type="email" i]{
+		padding: 5px;
+		margin: 1px 2px;
+		font-size: smaller;
+	}
+	
+}
+@media(max-width:470px){
+	
+	body{
+		font-size: smaller;
+		margin-top: 20px;
+		margin-right: 5px;
+		margin-left: 5px;
+	}
+	input[type="text" i], input[type="email" i]{
+		padding: 5px;
+		margin: 0px 1px;
+		font-size: small;
+	}
+	form{
+		padding: 2px;
+	}
+    
+}

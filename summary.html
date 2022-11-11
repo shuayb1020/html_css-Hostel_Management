@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>complain Summary|Hostel portal</title>
+    <link rel="stylesheet" href="complain.css">
+    <link rel="stylesheet" href="./fontawesome-free-5.15.2-web/css/all.css">
+</head>
+<body>
+    <div id="Sidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <img src="logo.png" width="100em" height="60px" style="border-radius: 50%; margin-left: 50px;" alt="">
+        <a href="dashboard.html">
+            <i class="fa fa-clock"></i>
+             Dashboard
+        </a>
+        
+        <a href="complain.html">
+            <i class="fa fa-comments"></i>
+            Room complain
+        </a> 
+        
+        
+        <a href="roomReg.html">
+            <i class="fa fa-bed"></i>
+            Room registration
+        </a>
+        
+        <a href="login.html">
+            <i class="fa fa-arrow-alt-circle-right"></i>
+            Logout
+        </a>
+    </div>
+
+    <!-- end of drawer -->
+    <div id="main">
+        <div class="navbar">
+
+        </div>
+
+        <div id="form">
+            <div id="head" style="font-weight: bold; width:97%; margin: 5px;">Complaint Summary</div>
+            <table>
+                <tr >
+                    <th>Category</th>
+                    <th>Subject</th>
+                    <th>Description</th>
+                    <th>Date</th>
+                </tr>
+
+                <tr>
+                    <td> Plumbing</td>
+                    <td> spoilt floor drain</td>
+                    <td> Water is not flowing out properly</td>
+                    <td>12/10/2022</td>
+                </tr>
+                <tr>
+                    <td> Plumbing</td>
+                    <td> spoilt floor drain</td>
+                    <td> Water is not flowing out properly</td>
+                    <td>12/10/2022</td>
+                </tr>
+                <tr>
+                    <td> Plumbing</td>
+                    <td> spoilt floor drain</td>
+                    <td> Water is not flowing out properly</td>
+                    <td>12/10/2022</td>
+                </tr>
+            </table>
+        </div>
+
+
+
+        <!--  HARMBURGER FOR SIDE DRAWER. when clicked the side nav menu appears -->
+        <span style="font-size:30px;cursor:pointer;color: white; position: absolute; padding-top: 20px; float: right;" 
+        class="harmburger" onclick="openNav()"> &#9776; </span>
+
+
+    </div>
+
+    <script>
+        function openNav() {
+            document.getElementById("Sidenav").style.width = "240px";
+            document.getElementById("main").style.marginLeft = "240px";
+            
+        }
+        
+        function closeNav() {
+            document.getElementById("Sidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft= "0";
+        }
+        function confirmation() {
+            var na= document.getElementsByTagName('input');
+        if (na === " " ) {
+            // alert("the password is not correct");
+            document.getElementById("message").innerHTML = "&times password does not correspond with confirm passsword"
+            return false;
+        }else{
+            window.location.href = "login.html"
+        }
+    
+}
+
+    </script>
+</body>
+</html>

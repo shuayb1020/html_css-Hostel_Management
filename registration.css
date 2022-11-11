@@ -1,0 +1,149 @@
+body{
+    background-color: antiquewhite;
+    align-items: center;
+    justify-content: center;
+    margin: 45px 25%;
+    color:  #1A0A0C;
+    font-family: Segoe UI;
+}
+h1{
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    font-weight: bold;
+    font-size: xx-large;
+    padding: 0 0 20px 0;
+}
+/* p{
+    font-size: small;
+    padding: 0px;
+    margin: -10px 0px;
+} */
+/* .login{
+    background-color: #FFE1E5;
+    color: #1A0A0C;
+    width: 50%;
+    padding: 10px 0 10px 25px;
+    font-size: xx-large;
+    text-decoration: none;
+} */
+/* .register{
+    background-color:  #9B0016 ;
+    color:  #FFE1E5 ;
+    width: 50%;
+    padding: 10px 0 10px 25px;
+    font-size: xx-large;
+    text-decoration: none;
+} */
+#general{
+    display: flex;
+    justify-content: space-between;
+}
+#form{
+    border: 2px solid #fff;
+    line-height: 40px;
+}
+input, select{
+    border-radius: 20px;
+    margin: 3px 4px;
+    width: 95%;
+    padding: 10px;
+    font-size: large;
+}
+label{
+    font-size: larger;
+}
+a{
+    color: #1A0A0C;
+    font-size: small;
+    text-decoration: none;
+}
+a:hover{
+    color:  #744f55;
+}
+#btn{
+    background-color:  #9B0016;
+    color: #FFE1E5;
+    margin: 2px;
+    padding: 10px 20px;
+    transition: 2s;
+    border-radius: 10px;
+}
+#btn:hover{
+    background-color:  #572d33;
+}
+form{
+    background-color: #fff;
+    padding: 10px;
+    font-size: larger;
+    padding-bottom: 40px;
+}
+.input1{
+    margin: 20px;
+}
+.input2{
+    text-align: center;
+    align-items: center;
+}
+
+img{
+    width: 210px;
+    height: 85px;
+    margin-top: 25px;
+    /* padding-left: 70px; */
+    /* margin: 0 235px 0 235px; */
+}
+
+/* input{
+    padding: 5px;
+    margin: 1px 2px;
+    font-size: smaller;
+} */
+@media(max-width:1024px){
+	.register, .login{
+		padding: 5px 0px 5px 10px;
+		font-size: large;
+	}
+	body{
+		font-size: small;
+		margin-left: 100px;
+		margin-right: 100px;
+	}
+	input, select{
+		padding: 5px;
+		margin: 1px 2px;
+		font-size: smaller;
+	}
+	
+}
+@media (max-width:470px){
+    .register, .login{
+        font-size: large;
+        padding: 2px 0 2px 5px;
+    }
+    body{
+        font-size: smaller;
+        margin-top: 20px;
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+    input, select{
+        padding: 5px;
+        margin: 0 1px;
+        font-size: small;
+    }
+    form{
+        padding: 2px;
+    }
+    img{
+        width: 110px;
+        height: 75px;
+        /* padding-left: 70px; */
+        /* margin: 0 235px 0 235px; */
+    
+
+    }
+}
+footer{
+    margin-top: 30px;
+}

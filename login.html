@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Hostel portal</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <p> Hostel portal</p>
+    <div id="form">
+    
+        <form action="" onsubmit="comment()">
+            <center><img src="logo.png" alt="Tech-u logo" class="logo" width="150px"></center>
+           <div id="input1">
+           <label for="userName">Username</label><br>
+           <input type="text" name="UserName" id="UserName" required><br>
+           <label for="password">Password</label><br>
+           <input type="password" name="password" id="Pword" required><br></div>
+           <div id="input2"><input type="checkbox" name="rememberMe" id="">REMEMBER ME<br>
+           <button> <a href="dashboard.html"> LOGIN </button> </a><br>
+           <!-- <input type="submit" id="btn" value="LOGIN" > -->
+           <!-- <a href="">FORGET PASSWORD</a></div> -->
+        </form>
+    </div>
+   <script>
+    const userName = document.getElementById("UserName").value;
+    const password = document.getElementById("Pword").value;
+    function comment() {
+        if (userName === " "){
+            alert("Check all field!");
+            return false;
+        }else{
+            window.location.href = "dashboard.html";
+            // return true;
+        }
+        
+    }
+   </script>
+   
+</body>
+</html>

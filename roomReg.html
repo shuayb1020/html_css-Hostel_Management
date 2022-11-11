@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Room registration | Hostel portal</title>
+    <link rel="stylesheet" href="roomReg.css">
+   
+</head>
+<body>
+    <p> Room Registration</p>
+    <div id="form">
+    
+        <form action="">
+            <center><img src="logo.png" alt="Tech-u logo" class="logo" width="150px"></center>
+           <div id="input1">
+           <label for="userName">Username</label><br>
+           <input type="text" name="UserName" required><br>
+           <label for="email">Email</label><br>
+           <input type="email" name="email" required><br>
+           <label for="block">Block</label><br>
+           <select name="block" id="block" class="hostel" onclick="configureDropDownLists(this,document.getElementById('room'))"> 
+            <option value="">--select--</option>
+            <option value="Male University Hostel">Male University Hostel</option>
+            <option value="Female University Hostel">Female University Hostel</option>
+            <option value="Block A">Block A</option>
+            <option value="Block B">Block B</option>
+            <option value="Block C">Block C</option>
+            <option value="Block D">Block D</option>
+            <option value="Block E">Block E</option>
+            <option value="Block F">Block F</option>
+           </select><br>
+           <label for="room">Room Number</label><br>
+           <select name="room" id="room" class="hostel">
+            
+           </select><br>
+           <div id="input2">
+                <button onclick="alert('You have successfully registered your allocation')"> <a href="dashboard.html"> REGISTER </a> </button><br>
+           </div>
+        </form>
+    </div>
+   <script src="roomReg.js"></script>
+</body>
+</html>
